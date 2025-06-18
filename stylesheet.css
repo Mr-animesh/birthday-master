@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    background-color: #1f1e1e;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #1f1e1e;
+}
+
+#birthday-button{
+    background-color: #35b2db;
+    color: #f4f4ef;
+    border: 4px solid #ffffff;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 620px;
+    margin-left: 660px;
+}
+
+#lights{
+    display: none;
+}
+.bulb {
+    height: 70px;
+    width: 130px;
+    padding-right: 40px;
+
+}
+.active {
+    transition: opacity 10s ease;
+
+}

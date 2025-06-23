@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 
-.background {
-    background-color: #1f1e1e;
+@keyframes float {
+    from{
+        transform: translateX(-100x);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#bg {
+    background-color: #131313;
 }
 
 body {
@@ -14,28 +25,67 @@ body {
     background-color: #1f1e1e;
 }
 
-#birthday-button{
+.birthday-button{
     background-color: #35b2db;
     color: #f4f4ef;
-    border: 4px solid #ffffff;
+    border: 3px solid #ffffff;
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 620px;
     margin-left: 660px;
-}
-
-#lights{
     display: none;
 }
+.things{
+    display: none;
+}
+#turn-on{
+    display: block;
+}
+
+
 .bulb {
     height: 70px;
     width: 130px;
     padding-right: 40px;
 
 }
-.active {
-    transition: opacity 10s ease;
+#bulbs{
+    display: none;
+}
+#banner-incoming{
+    display: none;
+}
 
+.banner-incoming{
+    display: inline;
+    animation: float 30s ease-in-out forwards;
+    padding-top: 60px;
+    padding-left: 530px;
+    transition: 4ms;
+    animation: 30ms ;
+}
+
+.ballonClass{
+    display: inline;
+    animation: float 30ms ease-in forwards;
+    height: 80px;
+    width: 80px;
+}
+
+.cakeClass1 {
+    display: inline;
+}
+
+.cakeClass2 {
+    display: block;
+}
+
+.setup {
+    display: block;
+}
+
+.msgClass {
+    display: block;
 }
